@@ -167,7 +167,7 @@ contract TokenTransferor is OwnerIsCreator {
             data: "",
             tokenAmounts: tokenAmounts,
             extraArgs: Client._argsToBytes(
-                Client.EVMExtraArgsV1({gasLimit: 0})
+                Client.EVMExtraArgsV1({gasLimit: 200_000})
             ),
             feeToken: _feeTokenAddress
         });
